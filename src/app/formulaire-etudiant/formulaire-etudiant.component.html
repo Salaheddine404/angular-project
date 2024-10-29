@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <form (ngSubmit)="onSubmit()" #etudiantForm="ngForm">
+          <div class="form-group">
+            <label for="etablissement">Établissement :</label>
+            <input type="text" id="etablissement" required [(ngModel)]="etudiant.etablissement" name="etablissement" #etablissement="ngModel" class="form-control" />
+          </div>
+      
+          <div class="form-group">
+            <label for="nomComplet">Nom Complet :</label>
+            <input type="text" id="nomComplet" required [(ngModel)]="etudiant.nomComplet" name="nomComplet" #nomComplet="ngModel" class="form-control" />
+          </div>
+      
+          <div class="form-group">
+            <label for="matricule">Matricule :</label>
+            <input type="text" id="matricule" required [(ngModel)]="etudiant.matricule" name="matricule" #matricule="ngModel" class="form-control" />
+          </div>
+      
+          <div class="form-group">
+            <label for="ribPersonne">RIB Personne :</label>
+            <input type="text" id="ribPersonne" required [(ngModel)]="etudiant.ribPersonne" name="ribPersonne" #ribPersonne="ngModel" class="form-control" />
+          </div>
+      
+          <button type="submit" class="btn btn-primary" [disabled]="!etudiantForm.form.valid">Soumettre</button>
+        </form>
+      </div>
+      
+</body>
+</html>

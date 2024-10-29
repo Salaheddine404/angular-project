@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<div class="header">
+  Université Euroméditerranéenne de Fès
+</div>
+<body>
+  <div class="afficher-etudiant-container">
+    <div class="etudiant-card">
+      <h2>Carte Étudiant</h2>
+      <div class="etudiant-info">
+        <strong>Établissement :</strong> {{ etudiant?.etablissement }}
+      </div>
+      <div class="etudiant-info">
+        <strong>Nom Complet :</strong> {{ etudiant?.nomComplet }}
+      </div>
+      <div class="etudiant-info">
+        <strong>Matricule :</strong> {{ etudiant?.matricule }}
+      </div>
+      <div class="etudiant-info">
+        <strong>RIB Personne :</strong> {{ etudiant?.ribPersonne }}
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* Styles globaux */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4CAF50, #2196F3); /* Dégradé vert et bleu */
+  }
+  
+  /* Conteneur du formulaire */
+  .form-container {
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Titre et étiquettes */
+  .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Champs du formulaire */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Bouton de soumission */
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #388E3C;
+  }
+  
+  /* Désactiver le bouton de soumission */
+  .btn-primary:disabled {
+    background-color: #9E9E9E;
+    cursor: not-allowed;
+  }
+  
